@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Ny blogg!"
+description: "Detta är mitt första inlägg i min nya blogg."
+category: verktyg
+tags: [GitHub, Jekyll, Sublime Text 2]
+---
+{% include JB/setup %}
+
+Detta är mitt första inlägg!
+@This is a test@
