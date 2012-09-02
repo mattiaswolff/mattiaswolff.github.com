@@ -1,23 +1,20 @@
-<div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
-</div>
-
 <div class="row">
   <div class="span8">
+    <h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }}</a> <small>({{ page.date | date_to_string }})</small></h2>
     {{ content }}
     <hr>
     <div class="pagination">
       <ul>
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Föregående</a></li>
       {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev disabled"><a>&larr; Föregående</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Arkiv</a></li>
       {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Nästa &rarr;</a></li>
       {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next disabled"><a>Nästa &rarr;</a>
       {% endif %}
       </ul>
     </div>
@@ -27,15 +24,13 @@
   
   <div class="span4">
     <h4>Tidigare inlägg</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-
-  {% unless page.tags == empty %}
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate2 %}
     <br />
     <h4>Taggar</h4>
     <ul class="tag_box">
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
   </div>
 </div>

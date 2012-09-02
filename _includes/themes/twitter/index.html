@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="span8">
+    {{ content }}
+  </div>
+  
+  <div class="span4">
+    <h4>Tidigare inlägg</h4>
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate2 %}
+    <br />
+    <h4>Taggar</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </ul>
+  </div>
+</div>
