@@ -1,6 +1,7 @@
 ---
-layout: page
-title: "New Page"
+layout: index
+title: "Mattias Wolff"
 description: ""
 ---
 {% include JB/setup %}
+Hej
