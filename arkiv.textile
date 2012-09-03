@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "New Page"
+title: "mattiaswolff.com - arkiv"
 description: ""
 ---
 {% include JB/setup %}

@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Mattias Wolff"
+title: "mattiaswolff.com - om mig"
 description: ""
 ---
 {% include JB/setup %}
