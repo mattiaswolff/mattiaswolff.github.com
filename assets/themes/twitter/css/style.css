@@ -7,6 +7,11 @@ html, body {
 p {
 	font-family: 'Headland One', serif;
 }
+
+footer p {
+  font-size: 10px
+}
+
 .navbar {
   margin: 15px 0px 15px 0px;
 }
