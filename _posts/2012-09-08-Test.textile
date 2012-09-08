@@ -9,8 +9,8 @@ tags: [GitHub, Jekyll, Sublime Text 2]
 
 Test
 
-# Jekyll
+h1. Jekyll
 
-# GitHub
+h1. GitHub
 
-# Twitter - Bootstrap
+h1. Twitter - Bootstrap
