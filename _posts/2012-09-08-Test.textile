@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Att bygga en blogg med Jekyll och GitHub"
+description: "Detta är mitt första inlägg i min nya blogg."
+category: verktyg
+tags: [GitHub, Jekyll, Sublime Text 2]
+---
+{% include JB/setup %}
+
+Test
+
+# Jekyll
+
+# GitHub
+
+# Twitter - Bootstrap
