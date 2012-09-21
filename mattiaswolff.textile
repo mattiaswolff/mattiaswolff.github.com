@@ -4,4 +4,37 @@ title: "mattiaswolff.com - om mig"
 description: ""
 ---
 {% include JB/setup %}
-Hej
+
+<div id="profile">
+
+<img src="images/mattiaswolff.jpg" /><h3>Kod och mjukvara</h3>
+
+Ett av mina abolut största intressen är att  pilla med kod. Exempel på verktyg jag intresserat mig för är:
+
+h5. Web
+
+"bootstrap":http://twitter.github.com/bootstrap, "backbone.js":http://backbonejs.org/, "jQuery":http://www.jquery.com, "php":http://www.php.net, "jekyll":http://jekyllrb.com/
+
+h5. Databaser
+
+"mongodb":http://www.mongodb.org/, "redis":http://redis.io/, "ms sql server":http://www.microsoft.com/sqlserver/en/us/default.aspx
+
+h5. Verktyg
+
+"github":http://www.github.com, "jira":http://www.atlassian.com/software/jira/overview, "confluence":http://www.atlassian.com/software/confluence/overview, "sublime text 2":http://www.sublimetext.com/
+
+h5. Övrigt
+
+"node.js":http://nodejs.org/, "coffee script":http://coffeescript.org, "arduino":http://www.arduino.cc, "powershell":http://technet.microsoft.com/en-us/library/bb978526.aspx, "aws":http://aws.amazon.com, "windows azure":http://www.windowsazure.com/sv-se/ 
+
+h3. Mitt jobb på Medius
+
+Dagar (och vissa nätter) jobbar jag som teamledare för 8 konsulter på "Medius":http://www.medius-group.com/sv/. Fokus ligger på implementationsprojekt av "Mediusflow":http://www.medius-group.com/en/solutions/invoice-automation/110-invoice-automation-a-purchase-2-pay och framförallt integrationer mot olika affärssystem. 
+
+I rollen som teamledare jobbar jag också för att förbättra processer och verktyg för att nå bästa möjliga slutresultat. 
+
+h3. När jag får tid över 
+
+Utanför datorvärlden är jag en engagerad "fotbollssupporter":http://www.dif.se, entusiastisk "fotbollsspelare":http://www.laget.se/dynamofussball och skaplig "löpare":http://runkeeper.com/user/550802844/profile. Jag har ett stort intresse för matlagning och läser en hel del böcker. 
+
+</div>
