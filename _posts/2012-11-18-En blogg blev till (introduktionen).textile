@@ -1,0 +1,24 @@
+---
+layout: post
+title: "En blogg blev till (introduktionen)"
+description: "Kort om varför jag startat en blogg och vad jag vill uppnå med den"
+category: bloggen
+tags: [bloggen]
+---
+{% include JB/setup %}
+
+Den som söker information om programutveckling och mjukvara idag har inga problem att finna. Tvärt om blir volymen data lätt överväldigande. Twitter-flödet bidrar konstant med nya länkar, Stack Overflow erbjuder en aldrig sinande källa till frågor och svar och initierade bloggar går på djupet inom alla ämnen man kan tänka sig. 
+
+Information overload kort sagt. 
+
+För att möta detta konstanta flöde har jag letat efter en struktur. Något som hjälper till att samla och dokumentera. Tvingar mig att verkligen fokusera på de mest intressanta ämnena på allvar innan något nytt pockar på uppmärksamheten.
+
+Slutsatsen blev att skapa en blogg. Och att i denna, någon gång i veckan, samla tankarna och landa. Landa på en tillfällig plattform att falla tillbaka på när ny information återigen öser över en. En plattform att relatera till.
+
+Så vad kommer bloggen handla om? Men den är ingen vågad gissning att följande ämnen kommer spelar figurera mer eller mindre frekvent:
+* Moln-tjänster i allmänhet och Windows Azure i synnerhet.
+* De verktyg och tjänster som gör livet enklare och roligare (GitHub, Sublime Text 2).
+* Nya teknologier och ramverk (node.js, bootstrap, mongodb, reddis).
+* Gamla bepövade arbetshästar (powershell, SQL).
+* De små och stora komponenter som bidrar till framgång (ledarskap, ständiga förbättringar, konsten att fokusera, "disruptive innovation").
+* Och säkert en massa annat jag ännu inte snubblat på eller för tillfället tappat bort i bruset.
