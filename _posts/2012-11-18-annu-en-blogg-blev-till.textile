@@ -11,9 +11,9 @@ Den som söker information om programutveckling och mjukvara idag har inga probl
 
 Information overload kort sagt. 
 
-För att möta detta konstanta flöde har jag letat efter en struktur. Något som hjälper till att samla och dokumentera. Tvingar mig att verkligen fokusera på de mest intressanta ämnena på allvar innan något nytt pockar på uppmärksamheten.
+För att möta detta konstanta flöde har jag letat efter en struktur. Något som hjälper till att samla och dokumentera. Tvingar mig att verkligen fokusera på de mest intressanta ämnena på allvar innan jag hänger mig åt något nytt som pockar på uppmärksamheten.
 
-Slutsatsen blev att skapa en blogg. Och att i denna, någon gång i veckan, samla tankarna och landa. Landa på en tillfällig plattform att falla tillbaka på när ny information återigen öser över en. En plattform att relatera till.
+Resultatet blev att skapa en blogg. Och att i denna, någon gång i veckan, samla tankarna och landa. Landa på en tillfällig plattform att falla tillbaka på när ny information återigen öser över en. En plattform att relatera till.
 
 Så vad kommer bloggen handla om? Men den är ingen vågad gissning att följande ämnen kommer spelar figurera mer eller mindre frekvent:
 * Moln-tjänster i allmänhet och "Windows Azure":https://www.windowsazure.com/ i synnerhet.
