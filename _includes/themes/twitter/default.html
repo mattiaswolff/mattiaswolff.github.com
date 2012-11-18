@@ -33,23 +33,30 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <div class="nav">
+          <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+          <ul class="nav">
             {% if page.url == "/index.html" %}
-              <a class="btn btn-primary disabled" href="{{ BASE_PATH }}/index.html">Blogg</a>
+              <li class="btn btn-primary disabled" href="{{ BASE_PATH }}/index.html">Blogg</li>
               {% else %}
-              <a class="btn btn-link" href="{{ BASE_PATH }}/index.html">Blogg</a>
+              <li class="btn btn-link" href="{{ BASE_PATH }}/index.html">Blogg</li>
             {% endif %}
             {% if page.url == "/arkiv.html" %}
-              <a class="btn btn-primary disabled" href="{{ BASE_PATH }}/arikv.html">Arkiv</a>
+              <li class="btn btn-primary disabled" href="{{ BASE_PATH }}/arikv.html">Arkiv</li>
               {% else %}
-              <a class="btn btn-link" href="{{ BASE_PATH }}/arkiv.html">Arkiv</a>
+              <li class="btn btn-link" href="{{ BASE_PATH }}/arkiv.html">Arkiv</li>
             {% endif %}
             {% if page.url == "/mattiaswolff.html" %}
-              <a class="btn btn-primary disabled" href="{{ BASE_PATH }}/mattiaswolff.html">Om mig</a>
+              <li class="btn btn-primary disabled" href="{{ BASE_PATH }}/mattiaswolff.html">Om mig</li>
               {% else %}
-              <a class="btn btn-link" href="{{ BASE_PATH }}/mattiaswolff.html">Om mig</a>
+              <li class="btn btn-link" href="{{ BASE_PATH }}/mattiaswolff.html">Om mig</li>
             {% endif %}
-          </div>
+          </ul>
+        </div>
         </div>
       </div>
     </div>
