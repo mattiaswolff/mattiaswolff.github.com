@@ -4,8 +4,9 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   
 }
-p {
+p, li {
 	font-family: 'Headland One', serif;
+  line-height: 2em;
 }
 
 footer p {
