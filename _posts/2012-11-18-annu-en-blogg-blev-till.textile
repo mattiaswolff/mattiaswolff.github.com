@@ -7,7 +7,7 @@ tags: [bloggen]
 ---
 {% include JB/setup %}
 
-Den som söker information om programutveckling och mjukvara idag har inga problem att finna. Tvärt om blir volymen data lätt överväldigande. Twitter-flödet bidrar konstant med nya länkar, Stack Overflow erbjuder en aldrig sinande källa till frågor och svar och initierade bloggar går på djupet inom alla ämnen man kan tänka sig. 
+Den som söker information om programutveckling och mjukvara idag har inga problem att finna. Tvärt om blir volymen data lätt överväldigande. "Twitter-flödet":https://twitter.com bidrar konstant med nya länkar, "Stack Overflow":http://stackoverflow.com/ erbjuder en aldrig sinande källa till frågor och svar och initierade bloggar går på djupet inom alla ämnen man kan tänka sig. 
 
 Information overload kort sagt. 
 
@@ -16,9 +16,9 @@ För att möta detta konstanta flöde har jag letat efter en struktur. Något so
 Slutsatsen blev att skapa en blogg. Och att i denna, någon gång i veckan, samla tankarna och landa. Landa på en tillfällig plattform att falla tillbaka på när ny information återigen öser över en. En plattform att relatera till.
 
 Så vad kommer bloggen handla om? Men den är ingen vågad gissning att följande ämnen kommer spelar figurera mer eller mindre frekvent:
-* Moln-tjänster i allmänhet och Windows Azure i synnerhet.
-* De verktyg och tjänster som gör livet enklare och roligare (GitHub, Sublime Text 2).
-* Nya teknologier och ramverk (node.js, bootstrap, mongodb, reddis).
-* Gamla bepövade arbetshästar (powershell, SQL).
+* Moln-tjänster i allmänhet och "Windows Azure":https://www.windowsazure.com/ i synnerhet.
+* De verktyg och tjänster som gör livet enklare och roligare ("GitHub":https://github.com/, "Sublime Text 2":http://www.sublimetext.com/).
+* Nya teknologier och ramverk ("node.js":http://nodejs.org/, "Bootstrap":http://twitter.github.com/bootstrap/, "mongodb":http://www.mongodb.org/:, "redis":http://redis.io/).
+* Gamla bepövade arbetshästar ("powershell":http://blogs.msdn.com/b/powershell/, "MS SQL":http://www.microsoft.com/sqlserver/en/us/default.aspx).
 * De små och stora komponenter som bidrar till framgång (ledarskap, ständiga förbättringar, konsten att fokusera, "disruptive innovation").
 * Och säkert en massa annat jag ännu inte snubblat på eller för tillfället tappat bort i bruset.
