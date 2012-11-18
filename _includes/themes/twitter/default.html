@@ -41,9 +41,11 @@
           <div class="nav-collapse collapse">
           <ul class="nav">
             {% if page.url == "/index.html" %}
-              <li class="btn btn-primary disabled" href="{{ BASE_PATH }}/index.html">Blogg</li>
+              <li class="btn btn-primary disabled"> 
+                <a href="{{ BASE_PATH }}/index.html">Blogg</a>
+              </li>
               {% else %}
-              <li class="btn btn-link" href="{{ BASE_PATH }}/index.html">Blogg</li>
+              <li class="btn btn-link"> <a href="{{ BASE_PATH }}/index.html">Blogg</a></li>
             {% endif %}
             {% if page.url == "/arkiv.html" %}
               <li class="btn btn-primary disabled" href="{{ BASE_PATH }}/arikv.html">Arkiv</li>
