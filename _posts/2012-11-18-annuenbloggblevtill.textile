@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "En blogg blev till (introduktionen)"
+title: "Ännu blogg blev till"
 description: "Kort om varför jag startat en blogg och vad jag vill uppnå med den"
 category: bloggen
 tags: [bloggen]
