@@ -73,11 +73,6 @@ footer p {
 }
 
 
-@media (max-width: 980px) {
-  .container {width:480px;}
-}
-
-
 /* tag_box ======================================================== */
 
 .tag_box {
