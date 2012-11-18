@@ -77,10 +77,6 @@ footer p {
   .container {width:480px;}
 }
 
-@media (min-width: 980px) {
-  .container {width:940px;}
-}
-
 
 /* tag_box ======================================================== */
 
