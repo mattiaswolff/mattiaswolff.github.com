@@ -36,7 +36,6 @@ footer p {
   border-left:				0px solid #D4D4D4;
   border-top:				0px solid #D4D4D4;
 }
-.navbar .container {width: 940px}
 .navbar .nav{float: right;}
 .container > footer {
   margin-top: 20px;
@@ -71,6 +70,15 @@ footer p {
 
 .topbar .btn {
   border: 0;
+}
+
+
+@media (max-width: 980px) {
+  .container {width:480px;}
+}
+
+@media (min-width: 980px) {
+  .container {width:940px;}
 }
 
 
