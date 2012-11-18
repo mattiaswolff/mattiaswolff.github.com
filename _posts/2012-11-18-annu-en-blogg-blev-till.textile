@@ -7,15 +7,15 @@ tags: [bloggen]
 ---
 {% include JB/setup %}
 
-Den som söker information om programutveckling och mjukvara idag har inga problem att finna. Tvärt om blir volymen data lätt överväldigande. "Twitter-flödet":https://twitter.com bidrar konstant med nya länkar, "Stack Overflow":http://stackoverflow.com/ erbjuder en aldrig sinande källa till frågor och svar och initierade bloggar går på djupet inom alla ämnen man kan tänka sig. 
+Den som söker information om programutveckling eller mjukvara har idag inga problem att finna. Tvärt om blir volymen data lätt överväldigande. "Twitter-flödet":https://twitter.com bidrar konstant med nya länkar, "Stack Overflow":http://stackoverflow.com/ erbjuder en aldrig sinande källa till frågor och svar och initierade bloggar går på djupet inom alla ämnen man kan tänka sig. 
 
 Information overload kort sagt. 
 
-För att möta detta konstanta flöde har jag letat efter en struktur. Något som hjälper till att samla och dokumentera. Tvingar mig att verkligen fokusera på de mest intressanta ämnena på allvar innan jag hänger mig åt något nytt som pockar på uppmärksamheten.
+För att möta detta konstanta flöde har jag letat efter en struktur. Något som hjälper till att samla och dokumentera. Som tvingar mig att fokusera på de mest intressanta ämnena ordentligt innan jag hänger mig åt något av det nya som pockar på uppmärksamheten.
 
-Resultatet blev att skapa en blogg. Och att i denna, någon gång i veckan, samla tankarna och landa. Landa på en tillfällig plattform att falla tillbaka på när ny information återigen öser över en. En plattform att relatera till.
+Resultatet blev att skapa en blogg. För att i denna, någon gång i veckan, samla tankarna kring ett ämne. Skapa en tillfällig plattform att ta avstamp från. En baseline att relatera nya intryck till.
 
-Så vad kommer bloggen handla om? Men den är ingen vågad gissning att följande ämnen kommer spelar figurera mer eller mindre frekvent:
+Så vad kommer bloggen handla om? Det kommer styras av vad jag för tillfället intresserar mig för. Troligt är att följande ämnen kommer figurera mer eller mindre frekvent:
 * Moln-tjänster i allmänhet och "Windows Azure":https://www.windowsazure.com/ i synnerhet.
 * De verktyg och tjänster som gör livet enklare och roligare ("GitHub":https://github.com/, "Sublime Text 2":http://www.sublimetext.com/).
 * Nya teknologier och ramverk ("node.js":http://nodejs.org/, "Bootstrap":http://twitter.github.com/bootstrap/, "mongodb":http://www.mongodb.org/, "redis":http://redis.io/).
