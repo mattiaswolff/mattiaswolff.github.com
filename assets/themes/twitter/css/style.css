@@ -2,8 +2,8 @@
 html, body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
-  
 }
+
 p, li {
 	font-family: 'Nunito', serif;
   line-height: 2em;
@@ -61,6 +61,9 @@ footer p {
   border-bottom: 1px solid #eee;
   padding-bottom: 12px;
 }
+
+a .btn {cursor: pointer;}
+
 /* Page header tweaks */
 .page-header {
   background-color: #f5f5f5;
