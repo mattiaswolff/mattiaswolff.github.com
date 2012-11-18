@@ -5,12 +5,12 @@ html, body {
   
 }
 p, li {
-	font-family: 'Headland One', serif;
+	font-family: 'Nunito', serif;
   line-height: 2em;
 }
 
 li {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 footer p {
