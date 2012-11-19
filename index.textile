@@ -1,6 +1,6 @@
 ---
 layout: index
-title: mattiaswolff.com - blogg
+title: mattiaswolff.com | Blogg
 tagline:
 ---
 {% include JB/setup %}
