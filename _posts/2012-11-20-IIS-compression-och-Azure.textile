@@ -1,0 +1,30 @@
+---
+layout: post
+title: "HTTP compression med IIS på Windows Azure"
+description: "Kort om varför jag startat en blogg och vad jag vill uppnå med den"
+category: bloggen
+tags: [iis, azure, prestanda]
+---
+{% include JB/setup %}
+
+En viktig komponent för att maximera prestandan i en web-applikation är att minska mängden data som skickas mellan klient och server. Mindre data innebär mindre laddningstider och därmed snabbare respons.
+
+Ett sätt att minska mängden data som skickas är att låta web-servern komprimera denna innan den skickas till klienten. Exakt hur detta görs varierar mellan olika web-servrar men möjligheten finns i regel.
+
+Statisk och dynamisk kompression
+De filer som skickas från en web-server till en klient kan delas in i statiska och dynamiska.
+# Statiska filer. Filer som ser är lika i varje förfrågan som görs till en viss URL. Vanliga exempel är bilder, CSS-filer och javascript.
+# Dynamiska filer. Filer där innehållet kan se olika ut i en viss URL. Vanliga exempel är svar från web-tjänster samt innehåll som genenerar dynamiskt på server-sidan (php, asp.NET etc.).
+
+Statiska filer bör alltid komprimeras eftersom web-servern kan spara de komprimerade filerna och återanvända dessa vid framtida förfrågningar. Därmed blir jobbet att göra själva komprimeringen mycket litet i förhållande till resultatet. För dynamiska filer är valet inte lika självklart eftersom komprimeringen måste genomföras i samband med att varje förfrågan behandlas. Att komprimera dessa filer innebär alltså en tradeoff mellan den ökade CPU som krävs för komrimering och den minskade filstorlek som blir resultatet.
+
+Aktivera komprimering i IIS 7 / 7.5
+Standardinställningen i IIS är att statisk komprimering är aktiv medan dynamisk komprimering är inaktiv. För att aktivera dynamisk komprimering så lägg till följande i web.config för den site som inställningen ska gälla för:
+
+bc.. puts <system.webServer>
+puts	<urlCompression doDynamicCompression="true" />
+puts </system.webServer>
+
+
+
+Starta upp webservrar på Windows Azure med kompression konfigurerad
