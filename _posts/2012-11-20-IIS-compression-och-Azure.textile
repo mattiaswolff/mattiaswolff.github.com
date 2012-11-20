@@ -27,4 +27,8 @@ puts </system.webServer>
 
 
 
+%systemroot%\system32\inetsrv\appcmd.exe set config -section:system.webServer/httpCompression /+"dynamicTypes.[mimeType='application/json',enabled='True']" /commit:apphost
+%systemroot%\system32\inetsrv\appcmd.exe set config -section:system.webServer/httpCompression /+"dynamicTypes.[mimeType='application/json; charset=utf-8',enabled='True']" /commit:apphost
+%systemroot%\system32\inetsrv\appcmd.exe set config /section:urlCompression /doDynamicCompression:True
+
 Starta upp webservrar på Windows Azure med kompression konfigurerad
