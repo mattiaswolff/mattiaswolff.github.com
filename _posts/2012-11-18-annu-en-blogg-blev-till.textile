@@ -13,6 +13,12 @@ Information overload kort sagt.
 
 För att möta detta konstanta flöde har jag letat efter en struktur. Något som hjälper till att samla och dokumentera. Som tvingar mig att fokusera på de mest intressanta ämnena ordentligt innan jag hänger mig åt något av det nya som pockar på uppmärksamheten.
 
+{% highlight ruby %}
+def foo 
+	puts 'foo' 
+end
+{% endhighlight %}
+
 Resultatet blev att skapa en blogg. För att i denna, någon gång i veckan, samla tankarna kring ett ämne. Skapa en tillfällig plattform att ta avstamp från. En baseline att relatera nya intryck till.
 
 Så vad kommer bloggen handla om? Det kommer styras av vad jag för tillfället intresserar mig för. Troligt är att följande ämnen kommer figurera mer eller mindre frekvent:
