@@ -22,13 +22,10 @@ Så vad kommer bloggen handla om? Det kommer styras av vad jag för tillfället 
 * Gamla beprövade arbetshästar ("powershell":http://blogs.msdn.com/b/powershell/, "MS SQL":http://www.microsoft.com/sqlserver/en/us/default.aspx).
 * De små och stora komponenter som bidrar till framgång (ledarskap, ständiga förbättringar, konsten att fokusera, "disruptive innovation").
 * Och säkert en massa annat jag ännu inte snubblat på eller för tillfället tappat bort i bruset.
-
-<span class="test">testar</span>
-
+sdf
 {% highlight ruby %}
 def foo
   puts 'foo'
 end
 {% endhighlight %}
-
-<span class="test">testar</span>
+sdf
