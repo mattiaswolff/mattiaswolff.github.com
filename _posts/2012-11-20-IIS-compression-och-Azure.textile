@@ -21,9 +21,12 @@ Statiska filer bör alltid komprimeras eftersom web-servern kan spara de komprim
 Aktivera komprimering i IIS 7 / 7.5
 Standardinställningen i IIS är att statisk komprimering är aktiv medan dynamisk komprimering är inaktiv. För att aktivera dynamisk komprimering så lägg till följande i web.config för den site som inställningen ska gälla för:
 
-bc.. puts <system.webServer>
-puts	<urlCompression doDynamicCompression="true" />
-puts </system.webServer>
+{% highlight xml %} 
+test
+<system.webServer>
+	<urlCompression doDynamicCompression="true" />
+</system.webServer>
+{% endhighlight %}
 
 Vilka filtyper som ska komprimeras är inte möjliga att styra i web.config. För att ändra detta krävs istället att applicationHost.config modifieras. Följande exempel visar en standarduppsättningen samt hur denna kan utökas med komprimering av JSON-filer:
 
