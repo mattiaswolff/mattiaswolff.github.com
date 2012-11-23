@@ -14,7 +14,9 @@ tagline:
 		</h2>
 		
 		{{ post.content }}
+
 		<hr>
+		test
 	</div>
 	<a href="{{ BASE_PATH }}{{ post.url }}">Kommentera &raquo;</a>
 	</div>
