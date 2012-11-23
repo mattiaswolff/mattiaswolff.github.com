@@ -3,10 +3,6 @@ layout: index
 title: mattiaswolff.com | Blogg
 ---
 {% include JB/setup %}
-<div class="posts">
-  {% for post in site.posts %}
-  	<div class="post">
-		{{ post.content }}
-	</div>
-  {% endfor %}
-</div>
+{% for post in site.posts %}
+	{{ post.content }}
+{% endfor %}
