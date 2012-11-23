@@ -24,7 +24,7 @@ Så vad kommer bloggen handla om? Det kommer styras av vad jag för tillfället 
 * Och säkert en massa annat jag ännu inte snubblat på eller för tillfället tappat bort i bruset.
 
 {% highlight ruby %}
-def foo
-  puts 'foo'
-end
+	def foo
+		puts 'foo'
+	end
 {% endhighlight %}
