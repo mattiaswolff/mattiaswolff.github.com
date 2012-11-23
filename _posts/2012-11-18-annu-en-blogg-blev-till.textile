@@ -23,4 +23,8 @@ Så vad kommer bloggen handla om? Det kommer styras av vad jag för tillfället 
 * De små och stora komponenter som bidrar till framgång (ledarskap, ständiga förbättringar, konsten att fokusera, "disruptive innovation").
 * Och säkert en massa annat jag ännu inte snubblat på eller för tillfället tappat bort i bruset.
 
-{% highlight ruby %}def foo puts 'foo' end{% endhighlight %}
+{% highlight ruby %}
+def foo 
+	puts 'foo' 
+end
+{% endhighlight %}
