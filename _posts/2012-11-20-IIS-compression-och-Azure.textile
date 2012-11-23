@@ -25,7 +25,41 @@ bc.. puts <system.webServer>
 puts	<urlCompression doDynamicCompression="true" />
 puts </system.webServer>
 
+Vilka filtyper som ska komprimeras är inte möjliga att styra i web.config. För att ändra detta krävs istället att applicationHost.config modifieras. Följande exempel visar en standarduppsättningen samt hur denna kan utökas med komprimering av JSON-filer:
 
+bc.. puts <httpCompression directory="%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files" minFileSizeForComp="2700">
+puts	<scheme name="gzip" dll="%Windir%\system32\inetsrv\gzip.dll" />
+puts		<dynamicTypes>
+puts			<add mimeType="text/*" enabled="true" />
+puts			<add mimeType="message/*" enabled="true" />
+puts			<add mimeType="application/x-javascript" enabled="true" />
+puts			<add mimeType="*/*" enabled="false" />
+puts			<add mimeType="application/json" enabled="true" />
+puts			<add mimeType="application/json; charset=utf-8" enabled="true" />
+puts		</dynamicTypes>
+puts		<staticTypes>
+puts			<add mimeType="text/*" enabled="true" />
+puts			<add mimeType="message/*" enabled="true" />
+puts			<add mimeType="application/javascript" enabled="true" />
+puts			<add mimeType="*/*" enabled="false" />
+puts		</staticTypes>
+puts	</httpCompression>
+
+bc.. puts <httpCompression directory="%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files" minFileSizeForComp="2700">
+puts	<scheme name="gzip" dll="%Windir%\system32\inetsrv\gzip.dll" />
+puts		<dynamicTypes>
+puts			<add mimeType="text/*" enabled="true" />
+puts			<add mimeType="message/*" enabled="true" />
+puts			<add mimeType="application/x-javascript" enabled="true" />
+puts			<add mimeType="*/*" enabled="false" />
+puts		</dynamicTypes>
+puts		<staticTypes>
+puts			<add mimeType="text/*" enabled="true" />
+puts			<add mimeType="message/*" enabled="true" />
+puts			<add mimeType="application/javascript" enabled="true" />
+puts			<add mimeType="*/*" enabled="false" />
+puts		</staticTypes>
+puts	</httpCompression>
 
 %systemroot%\system32\inetsrv\appcmd.exe set config -section:system.webServer/httpCompression /+"dynamicTypes.[mimeType='application/json',enabled='True']" /commit:apphost
 %systemroot%\system32\inetsrv\appcmd.exe set config -section:system.webServer/httpCompression /+"dynamicTypes.[mimeType='application/json; charset=utf-8',enabled='True']" /commit:apphost
