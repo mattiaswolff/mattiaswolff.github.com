@@ -1,0 +1,49 @@
+---
+layout: post
+title: "HTTP compression med IIS och Windows Azure"
+description: "En viktig komponent för att maximera prestandan i en web-applikation är att minska mängden data som skickas mellan klient och server. Mindre data innebär kortare laddningstider och därmed snabbare respons.
+
+Ett sätt att minska mängden data som skickas är att låta web-servern komprimera denna innan den skickas till klienten."
+category: bloggen
+tags: [iis, azure, prestanda]
+---
+{% include JB/setup %}
+
+En viktig komponent för att maximera prestandan i en web-applikation är att minska mängden data som skickas mellan klient och server. Mindre data innebär kortare laddningstider och därmed snabbare respons.
+
+Ett sätt att minska mängden data som skickas är att låta web-servern komprimera denna innan den skickas till klienten. Exakt hur detta görs varierar mellan olika web-servrar men möjligheten finns i regel.
+
+h4. Statisk och dynamisk komprimering
+
+De filer som skickas från en web-server till en klient kan delas in i statiska och dynamiska.
+# Statiska filer. Filer som ser är lika i varje förfrågan som görs till en viss URL. Vanliga exempel är bilder, CSS-filer och javascript.
+# Dynamiska filer. Filer där innehållet kan se olika ut i en viss URL. Vanliga exempel är svar från web-tjänster samt innehåll som genenerar dynamiskt på server-sidan (php, asp.NET etc.).
+
+Statiska filer bör alltid komprimeras eftersom web-servern kan spara de komprimerade filerna och återanvända dessa vid framtida förfrågningar. Därmed blir jobbet att göra själva komprimeringen mycket litet i förhållande till resultatet. 
+
+För dynamiska filer är valet inte lika självklart eftersom komprimeringen måste genomföras i samband med att varje förfrågan behandlas. Att komprimera dessa filer innebär alltså en tradeoff mellan den ökade CPU som krävs för komprimering och den minskade filstorlek som blir resultatet.
+
+h4. Aktivera komprimering i IIS 7 / 7.5
+
+Standardinställningen i IIS är att statisk komprimering är aktiv medan dynamisk komprimering är inaktiv. För att aktivera dynamisk komprimering så lägg till följande i web.config för den site eller applikation som inställningen ska gälla för:
+
+<script src="https://gist.github.com/4188702.js?file=dynamic_compression_in_webconfig.xml"></script>
+
+Vilka filtyper som ska komprimeras är inte möjliga att styra i web.config. För att ändra detta krävs istället att applicationHost.config modifieras. Detta beror på komprimeringsmodulen endast läser denna information på server-nivå.
+
+Följande exempel visar en standarduppsättningen av applicationHost.config samt hur denna kan utökas med komprimering av JSON-format:
+
+<script src="https://gist.github.com/4188702.js?file=standard_setup_applicationHostConfig.xml"></script>
+
+<script src="https://gist.github.com/4188702.js?file=json_added_to_applicationHostConfig.xml"></script>
+
+h4. Komprimering på Windows Azure
+
+Skriptet nedan aktiverar dynamisk komprimering samt adderar JSON till de format som ska komprimeras. Genom att köra detta som ett startup-task i Windows Azure garanteras att alla nya instanser får dessa inställningar. 
+
+<script src="https://gist.github.com/4188702.js?file=windows_azure_iiscompression.bat"></script>
+
+h4. Fler resurser
+
+# "IIS 7 Compression. Good? Bad? How much? - Scott Forsyth's Blog":http://weblogs.asp.net/owscott/archive/2009/02/22/iis-7-compression-good-bad-how-much.aspx
+# " Getting IIS 7 to Compress JavaScript":http://coderjournal.com/2008/04/iis-7-compress-javascript-gzip/
