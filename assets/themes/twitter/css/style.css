@@ -4,6 +4,10 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+p h1, p h2, p h3, p h4, p h5, p h6 {
+  font-family: inherit;
+}
+
 p, li {
 	font-family: 'Nunito', serif;
   line-height: 2em;
