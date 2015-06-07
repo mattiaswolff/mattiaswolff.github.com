@@ -8,13 +8,17 @@ h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
   font-family: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 35px 0 2px 0 
+}
+
 p, li {
 	font-family: 'Nunito', serif;
-  line-height: 2em;
+  line-height: 2;
 }
 
 li {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 footer p {
@@ -50,8 +54,6 @@ footer p {
 
 /* The white background content wrapper */
 .content {
-  border: 1px solid #eee;
-  background-color: #f9f9f9;
   padding: 10px 15px 10px 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
   -webkit-border-radius: 0px 0px 6px 6px;
@@ -67,6 +69,7 @@ div.navbar-fixed-top {position: static;}
 .content .post {
   border-bottom: 1px solid #eee;
   padding-bottom: 12px;
+  font-size: 22px;
 }
 
 a .btn {cursor: pointer;}

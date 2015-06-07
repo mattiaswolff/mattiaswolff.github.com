@@ -1,41 +1,20 @@
 <div class="row">
   <div class="span8">
-    <h1><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }}</a> <small>({{ page.date | date_to_string }})</small></h1>
+    <div class="post">
+    <h1><p><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }}</a></p></h1>
     {{ content }}
-    <hr />
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Föregående</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Föregående</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Arkiv</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Nästa &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Nästa &rarr;</a>
-      {% endif %}
-      </ul>
     </div>
-    <hr>
     {% include JB/comments %}
   </div>
   
   <div class="span4">
-    <h1>Kontakt</h1>
-    <a href="mailto:mattias.wolff@gmail.com">mattias.wolff@gmail.com</a><br />
+    <div class="info">
+      <a href="mailto:mattias.wolff@gmail.com">mattias.wolff@gmail.com</a><br />
     Twitter: <a href="https://twitter.com/mattiaswolff">@mattiaswolff</a><br />
     GitHub:  <a href="https://github.com/mattiaswolff">mattiaswolff</a><br />
     <br />
-    <h1>Tidigare inlägg</h1>
     {% assign posts_collate = site.posts %}
     {% include JB/posts_collate2 %}
-    <br />
-    <h1>Taggar</h1>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
+    </div>
   </div>
 </div>

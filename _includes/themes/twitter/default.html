@@ -30,37 +30,6 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse">
-          <ul class="nav">
-            {% if page.url == "/index.html" %}
-              <li><div><a class="btn btn-primary disabled" href="{{ BASE_PATH }}/index">Blogg</a></div></li>
-              {% else %}
-              <li><div><a class="btn btn-link" href="{{ BASE_PATH }}/index">Blogg</a></div></li>
-            {% endif %}
-            {% if page.url == "/arkiv.html" %}
-              <li><div><a class="btn btn-primary disabled" href="{{ BASE_PATH }}/arkiv">Arkiv</a></div></li>
-              {% else %}
-              <li><div><a class="btn btn-link" href="{{ BASE_PATH }}/arkiv">Arkiv</a></div></li>
-            {% endif %}
-            {% if page.url == "/om-mig.html" %}
-              <li><div><a class="btn btn-primary disabled" href="{{ BASE_PATH }}/om-mig">Om mig</a></div></li>
-              {% else %}
-              <li><div><a class="btn btn-link" href="{{ BASE_PATH }}/om-mig">Om mig</a></div></li>
-            {% endif %}
-          </ul>
-        </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
 
       <div class="content">
@@ -68,7 +37,7 @@
       </div>
 
       <footer>
-        <p>&copy; {{ site.author.name }} 2012 
+        <p>&copy; {{ site.author.name }}  
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
