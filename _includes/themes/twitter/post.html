@@ -1,6 +1,6 @@
 <div class="row">
   <div class="span8">
-    <h2><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }}</a> <small>({{ page.date | date_to_string }})</small></h2>
+    <h1><a href="{{ BASE_PATH }}{{ page.url }}">{{ page.title }}</a> <small>({{ page.date | date_to_string }})</small></h1>
     {{ content }}
     <hr />
     <div class="pagination">
@@ -23,16 +23,16 @@
   </div>
   
   <div class="span4">
-    <h4>Kontakt</h4>
+    <h1>Kontakt</h1>
     <a href="mailto:mattias.wolff@gmail.com">mattias.wolff@gmail.com</a><br />
     Twitter: <a href="https://twitter.com/mattiaswolff">@mattiaswolff</a><br />
     GitHub:  <a href="https://github.com/mattiaswolff">mattiaswolff</a><br />
     <br />
-    <h4>Tidigare inlägg</h4>
+    <h1>Tidigare inlägg</h1>
     {% assign posts_collate = site.posts %}
     {% include JB/posts_collate2 %}
     <br />
-    <h4>Taggar</h4>
+    <h1>Taggar</h1>
     <ul class="tag_box">
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}

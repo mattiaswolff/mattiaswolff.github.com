@@ -9,7 +9,7 @@ tags: [sql]
 
 Several DBAs rely on SQL Server Agent for scheduling different jobs needed to maintain databases. SQL Server Agent comes with handy features like e-mail notices on failed jobs etc. I have however struggled when troubleshooting failed jobs since the history view is not always able to store all output from the jobs. SQL Server Agent output file to the rescue!
 
-h4. Save ALL output to text files
+h2. Save ALL output to text files
 
 With SQL Server Agent output file it is possible to write all log information to a text file on disk. Thereby you don't have to worry about running out of space in the history log.
 
@@ -18,7 +18,7 @@ The process of setting up an output file is straight forward:
 # Choose the step where you want the output file and click Advanced Options.
 # Add the path to the output file you want to use.
 
-h4. Use SQL Server Agent Tokens to create unique output files
+h2. Use SQL Server Agent Tokens to create unique output files
 
 If you want to use output files for scheduled tasks you probably want to distinguish the output files. No problem! The answer is to use SQL Server Agent Tokens.
 
